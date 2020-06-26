@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Whatever this action does
     steps:
-      - uses: tanoka/test@v1
+      - uses: Tanoka/test@master
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           another_input: Some value
