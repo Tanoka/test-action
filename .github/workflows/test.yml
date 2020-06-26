@@ -1,13 +1,12 @@
-name: Bash GH Skeleton
+name: Bash Pull Request Merger
 
 on: [pull_request]
 
 jobs:
-  bash-gh-skeleton:
+  bash-pr-merger:
     runs-on: ubuntu-latest
-    name: Whatever this action does
+    name: Merge pull requests when there is only a composer.lock file
     steps:
-      - uses: Tanoka/test@master
+      - uses: tanoka/automerge-action@master
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          another_input: Some value
