@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Whatever this action does
     steps:
-      - uses: Tanoka/test@master
+      - uses: Tanoka/automerge-action@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           another_input: Some value
